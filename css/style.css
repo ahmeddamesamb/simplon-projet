@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    overflow: hidden;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+justify-content: space-between;
+padding: 1rem;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+}
+nav{
+    display: flex;
+justify-content: space-between;
+justify-content: center;
+align-items: center;
+
+}
+ul{
+    display: flex;
+margin-right: 5rem;
+
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+    nav ul li {
+        display: flex;
+        margin-right: 20px;
+justify-content: center;
+align-items: center;
+    }
+nav ul li a{
+     text-decoration: none; /* Supprime la décoration des liens */
+    color: black;
+    font-weight: bold;
+}
+
+
+.logo {
+
+align-items: center;
+    width: 100px;
+    height: auto;
+}
+/* boutton contact */
+/* Styles pour le bouton "Contact" */
+button {
+    background-color: #ce0033; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    border: none; /* Supprime la bordure du bouton */
+    padding: 10px ; /* Augmente la taille du bouton */
+    cursor: pointer; /* Change le curseur lorsque l'utilisateur survole le bouton */
+    border-radius: 5px; /* Arrondi les coins du bouton (ajustez selon vos préférences) */
+font-weight: bold;
+}
+
+/* Style supplémentaire au survol du bouton (facultatif) */
+button:hover {
+    background-color: #a7001a; /* Couleur de fond au survol */
+    color: white; /* Couleur du texte au survol */
+}
+.boutonsearch{
+display: flex;
+justify-content: center;
+align-items:center ;
+}
+/* Styles pour le sélecteur de langue */
+select {
+    color: #ce0033; /* Couleur du texte du sélecteur */
+    background-color: white; /* Couleur de fond du sélecteur */
+    padding: 8px; /* Espacement interne du sélecteur (ajustez selon vos préférences) */
+    border: none; /* Supprime la bordure du sélecteur */
+    border-radius: 5px; /* Arrondi les coins du sélecteur */
+    cursor: pointer; /* Change le curseur lorsque l'utilisateur survole le sélecteur */
+}
+
+/* Style au survol du sélecteur (facultatif) */
+select:hover {
+    background-color: #f2f2f2; /* Couleur de fond au survol */
+}
+
+/* Style au focus du sélecteur (lorsqu'il est sélectionné) */
+select:focus {
+    outline: none; /* Supprime la bordure lorsqu'il est en focus */
+    border-color: #a7001a; /* Couleur de la bordure au focus */
+}
+img {
+    width: 24px; /* Ajustez la largeur de l'image selon vos préférences */
+    height: 24px; /* Ajustez la hauteur de l'image selon vos préférences */
+    /* Autres styles CSS au besoin */
+    margin-left: 2rem;
+
+}
+/* LES SECTIONS DANS LE BODY */
+.section1{
+display: flex;
+flex-direction: column;
+height: 80vh;
+}
+.section1 h1{
+display: flex;
+color: #ce0033;
+display: flex;
+justify-content:center;
+align-items: center;
+font-size: 2rem;
+}
+.section1asidemain{
+display:flex ;
+justify-content: center;
+height: auto;
+}
+.section1aside{
+width: 50%;
+height: 73vh;
+border:2px solid #ce0033;
+
+
+}
+.section2{border:2px solid;
+}
+.section3{border:2px solid;
+}
