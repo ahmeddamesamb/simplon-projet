@@ -1,8 +1,11 @@
-*{
+/* Réinitialisation des styles par défaut pour tous les éléments */
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+/* Styles pour le conteneur principal de la page */
 .container {
     overflow: hidden;
     border: none;
@@ -11,125 +14,344 @@
     flex-direction: column;
 }
 
-.header{
+/* Styles pour l'en-tête de la page */
+.header {
     display: flex;
-justify-content: space-between;
-padding: 1rem;
-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-
+    justify-content: space-between;
+    padding: 1rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
-nav{
+
+/* Styles pour la barre de navigation */
+nav {
     display: flex;
-justify-content: space-between;
-justify-content: center;
-align-items: center;
-
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
-ul{
+
+/* Styles pour les listes non ordonnées (utilisées pour la navigation) */
+ul {
     display: flex;
-margin-right: 5rem;
-
+    margin-right: 5rem;
 }
+
+/* Styles pour les éléments de la barre de navigation */
 nav ul {
     list-style-type: none;
     padding: 0;
 }
 
-    nav ul li {
-        display: flex;
-        margin-right: 20px;
-justify-content: center;
-align-items: center;
-    }
-nav ul li a{
-     text-decoration: none; /* Supprime la décoration des liens */
+nav ul li {
+    display: flex;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles pour les liens dans la barre de navigation */
+nav ul li a {
+    text-decoration: none;
     color: black;
     font-weight: bold;
 }
 
-
+/* Styles pour le logo */
 .logo {
-
-align-items: center;
+    align-items: center;
     width: 100px;
     height: auto;
 }
-/* boutton contact */
+
 /* Styles pour le bouton "Contact" */
 button {
-    background-color: #ce0033; /* Couleur de fond du bouton */
-    color: white; /* Couleur du texte du bouton */
-    border: none; /* Supprime la bordure du bouton */
-    padding: 10px ; /* Augmente la taille du bouton */
-    cursor: pointer; /* Change le curseur lorsque l'utilisateur survole le bouton */
-    border-radius: 5px; /* Arrondi les coins du bouton (ajustez selon vos préférences) */
-font-weight: bold;
+    background-color: #ce0033;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
-/* Style supplémentaire au survol du bouton (facultatif) */
+/* Style au survol du bouton */
 button:hover {
-    background-color: #a7001a; /* Couleur de fond au survol */
-    color: white; /* Couleur du texte au survol */
+    background-color: #a7001a;
+    color: white;
 }
-.boutonsearch{
-display: flex;
-justify-content: center;
-align-items:center ;
+
+/* Styles pour le bouton de recherche */
+.boutonsearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 /* Styles pour le sélecteur de langue */
 select {
-    color: #ce0033; /* Couleur du texte du sélecteur */
-    background-color: white; /* Couleur de fond du sélecteur */
-    padding: 8px; /* Espacement interne du sélecteur (ajustez selon vos préférences) */
-    border: none; /* Supprime la bordure du sélecteur */
-    border-radius: 5px; /* Arrondi les coins du sélecteur */
-    cursor: pointer; /* Change le curseur lorsque l'utilisateur survole le sélecteur */
+    color: #ce0033;
+    background-color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-/* Style au survol du sélecteur (facultatif) */
+/* Style au survol du sélecteur */
 select:hover {
-    background-color: #f2f2f2; /* Couleur de fond au survol */
+    background-color: #f2f2f2;
 }
 
-/* Style au focus du sélecteur (lorsqu'il est sélectionné) */
+/* Style lorsqu'un sélecteur est en focus */
 select:focus {
-    outline: none; /* Supprime la bordure lorsqu'il est en focus */
-    border-color: #a7001a; /* Couleur de la bordure au focus */
+    outline: none;
+    border-color: #a7001a;
 }
+
+/* Styles pour les images */
 img {
-    width: 24px; /* Ajustez la largeur de l'image selon vos préférences */
-    height: 24px; /* Ajustez la hauteur de l'image selon vos préférences */
-    /* Autres styles CSS au besoin */
+    width: 24px;
+    height: 24px;
     margin-left: 2rem;
+}
+
+/* Styles pour la première section de la page */
+.section1 {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    background-color: #fafafa;
+}
+
+/* Styles pour les titres dans la première section */
+.section1 h1 {
+    display: flex;
+    color: #ce0033;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+/* Styles pour les éléments dans la première section */
+.section1asidemain {
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.section1aside1 {
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.section1aside2 {
+    width: 50%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Styles pour les cartes (cards) */
+.card0 {
+    background-color: #ce0033;
+    width: 30vw;
+    height: 20vh;
+    border-bottom-right-radius: 35px;
+    box-shadow: 0px 0px 10px rgba(236, 26, 19, 0.952);
+}
+
+.card0 h1 {
+    color: white;
+    font-weight: bolder;
+    font-size: 3rem;
+    display: flex;
+    justify-content: end;
+}
+
+.card0 h2 {
+    color: white;
+    font-weight: bolder;
+    font-size: 2em;
+    display: flex;
+    justify-content: end;
+}
+
+.card1 {
+    display: flex;
+    border: 1px solid;
+    width: 20vw;
+    height: 40vh;
+    z-index: 1;
+    transform: rotate(10deg);
+    border-radius: 8px;
+    background-color: #ce0033;
+    position: absolute;
+}
+
+.card2 {
+    border: 1px solid #ce003448;
+    display: flex;
+    width: 20vw;
+    height: 40vh;
+    z-index: 2;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.card4 {
+    width: 25vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.card4 h3 {
+    color: #ce0033;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles pour la deuxième section de la page */
+.section2 {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+}
+.section2 h1{
+    color: #ce0033;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Styles pour la troisième section de la page */
+.section3 {
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+.section4 {
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+.section5 {
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+.section6 {
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+.section7 {
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+.section8 {
+    display: flex;
+    height: 80vh;
+}
+
+.reseaux{
+    width: 25%;
+    border: 2px solid;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    background-color: #ce0033;
+    color: white;
 
 }
-/* LES SECTIONS DANS LE BODY */
-.section1{
-display: flex;
-flex-direction: column;
-height: 80vh;
-}
-.section1 h1{
-display: flex;
-color: #ce0033;
-display: flex;
-justify-content:center;
+/* Styles pour le conteneur du cercle */
+.circle {
+    width: 40px;
+    height: 40px;
+    background-color: #ce0033;
+    border-radius: 50%; /* Cela crée un cercle en utilisant le border-radius */
+    display: flex;
+width: 20vw;
+justify-content: center;
 align-items: center;
-font-size: 2rem;
+
 }
-.section1asidemain{
+.circle1{
 display:flex ;
 justify-content: center;
-height: auto;
+align-items: center;
 }
-.section1aside{
-width: 50%;
-height: 73vh;
-border:2px solid #ce0033;
 
+/* Styles pour la lettre "c" à l'intérieur du cercle */
+.letter {
+    font-size: 20px;
+    font-weight: bold;
+}
 
+/* Styles pour les petits boutons */
+.smallbotton {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.section2{border:2px solid;
+
+/* Styles pour les cercles de couleur */
+.span1 {
+    background-color: #ce0033;
+    border: 1px solid #ce003448;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
 }
-.section3{border:2px solid;
+
+.span2 {
+    background-color: #ce0033;
+    border: 1px solid #ce003448;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 4px;
+}
+
+.span3 {
+    background-color: #ce0033;
+    border: 1px solid #ce003448;
+    width: 40px;
+    height: 10px;
+    border-radius: 5px;
+    margin-left: 4px;
+}
+
+.span4 {
+    background-color: #ce0033;
+    border: 1px solid #ce003448;
+    width: 90px;
+    height: 10px;
+    border-radius: 5px;
+}
+.span5{
+margin-left: 12px;
+}
+.span6{
+    margin-left: 12px;
+    font-weight: bold;
+
 }
